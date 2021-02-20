@@ -1,6 +1,6 @@
 import { Composer } from 'telegraf';
 
-export const startHandler = Composer.command('start', async ctx => {
+export const startHandler = Composer.command('startstream', async ctx => {
     const { chat } = ctx.message;
 
     if (chat.type !== 'supergroup') {
